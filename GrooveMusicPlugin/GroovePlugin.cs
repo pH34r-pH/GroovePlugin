@@ -12,14 +12,10 @@ using System.Text.RegularExpressions;
 using System.Net.Http;
 using System.Text;
 
-namespace GroovePlugin
+namespace GrooveMusicPlugin
 {
     internal class Measure
     {
-        public static void Main()
-        {
-
-        }
 
         enum MeasureType
         {

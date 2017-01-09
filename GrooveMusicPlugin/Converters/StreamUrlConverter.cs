@@ -1,0 +1,32 @@
+﻿// ------------------------------------------------------------------------------
+//  Copyright (c) Microsoft Corporation.  
+//  All Rights Reserved.
+//  Licensed under the MIT License.
+//  See License in the project root for license information.
+// ------------------------------------------------------------------------------
+
+namespace Microsoft.Groove.Api.Samples.Converters
+{
+    using System;
+   // using Windows.Media.Core;
+
+    public class StreamUrlConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            string streamUrl = value as string;
+            if (streamUrl != null)
+            {
+                return null;// MediaSource.CreateFromUri(new Uri(streamUrl));
+            }
+
+            return null;
+        }
+
+        // No need to implement converting back on a one-way binding
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            return null;
+        }
+    }
+}
